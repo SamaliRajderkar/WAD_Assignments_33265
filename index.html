@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PICT B.E. Course Structure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CSS & JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+    }
+
+    .ui-header {
+      background-color: #004aad !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-header h1 {
+      font-size: 20px;
+    }
+
+    .ui-content {
+      background-color: #f3f6fa;
+      padding: 20px;
+    }
+
+    .ui-collapsible > h3 {
+      background-color: #0077cc !important;
+      color: white !important;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .ui-listview > li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      background-color: white;
+      border-radius: 5px;
+      margin: 5px 0;
+    }
+
+    .ui-listview > li b {
+      color: #333;
+    }
+
+    .ui-collapsible-inset {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div data-role="page" id="main">
+
+    <div data-role="header" data-position="fixed">
+      <h1>PICT B.E. Course Structure</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+      <div data-role="collapsible-set" data-inset="true">
+
+        <!-- FE -->
+        <div data-role="collapsible">
+          <h3>First Year (FE)</h3>
+          <ul data-role="listview">
+            <li><b>Engineering Mathematics I</b> - Differential Calculus</li>
+            <li><b>Engineering Physics</b> - Optics, Waves</li>
+            <li><b>Basic Electrical</b> - Circuits & Networks</li>
+            <li><b>Engineering Mechanics</b> - Forces & Motion</li>
+          </ul>
+        </div>
+
+        <!-- SE -->
+        <div data-role="collapsible">
+          <h3>Second Year (SE)</h3>
+          <ul data-role="listview">
+            <li><b>Data Structures</b> - Linked Lists, Trees</li>
+            <li><b>OOP using C++</b> - Classes, Inheritance</li>
+            <li><b>Digital Electronics</b> - Logic Gates, Circuits</li>
+            <li><b>Computer Networks</b> - Protocols, OSI model</li>
+          </ul>
+        </div>
+
+        <!-- TE -->
+        <div data-role="collapsible">
+          <h3>Third Year (TE)</h3>
+          <ul data-role="listview">
+            <li><b>DBMS</b> - SQL, ER Diagrams</li>
+            <li><b>Operating Systems</b> - Processes, Scheduling</li>
+            <li><b>Machine Learning</b> - Classification, Regression</li>
+            <li><b>Software Engineering</b> - SDLC, Testing</li>
+          </ul>
+        </div>
+
+        <!-- BE -->
+        <div data-role="collapsible">
+          <h3>Final Year (BE)</h3>
+          <ul data-role="listview">
+            <li><b>AI & Deep Learning</b> - CNN, RNN</li>
+            <li><b>Cloud Computing</b> - AWS, Virtualization</li>
+            <li><b>Cybersecurity</b> - Encryption, Firewalls</li>
+            <li><b>Project Phase I & II</b> - Final Year Project</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
