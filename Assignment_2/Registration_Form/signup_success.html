@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Successful</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .details {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup Successful! 🎉</h2>
+        <p>Thank you for registering. Below are your details:</p>
+
+        <div class="details">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Age:</strong> <span id="age"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+            <p><strong>Gender:</strong> <span id="gender"></span></p>
+            <p><strong>Address:</strong> <span id="address"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>Hobby:</strong> <span id="hobby"></span></p>
+        </div>
+
+        <button class="btn btn-primary" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage
+        let userData = JSON.parse(localStorage.getItem("userData"));
+
+        if (userData) {
+            document.getElementById("name").textContent = userData.name;
+            document.getElementById("age").textContent = userData.age;
+            document.getElementById("email").textContent = userData.email;
+            document.getElementById("mobile").textContent = userData.mobile;
+            document.getElementById("gender").textContent = userData.gender;
+            document.getElementById("address").textContent = userData.address;
+            document.getElementById("city").textContent = userData.city;
+            document.getElementById("hobby").textContent = userData.hobby;
+        }
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
