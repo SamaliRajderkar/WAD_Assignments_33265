@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Rectangle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #23374D; /* Set the background color of the page to blue */
+    }
+
+    .main-rectangle {
+      width: 80%; /* Make the rectangle 80% of the viewport width */
+      height: 80vh; /* 80% of the viewport height */
+      background-color: #ffffff;
+      border: 20px solid #23374D; /* Blue thick border */
+      border-radius: 50px;
+      margin: 10% auto; /* Center the rectangle vertically and horizontally */
+      box-sizing: border-box; /* Include border in width/height calculation */
+      position: relative; /* Position the text relative to the rectangle */
+      text-align: center; /* Center align text */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+    }
+
+    .login-text {
+      position: absolute;
+      top: 120px; /* Distance from the top */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust for centering */
+      font-weight: bold; /* Bold text */
+      color: #000000; /* Black color */
+      font-size: 45px; /* Font size in pixels */
+    }
+
+    .input-container {
+      margin-top: 50px; /* Space between text and input boxes */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-box {
+      background-color: #dddddd; /* Grey background color */
+      width: 500px;
+      padding: 20px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .input-label {
+      text-align: left;
+      position: absolute;
+      left: 10px;
+      color: #23374D;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 20px); /* Adjust input width for label */
+      border: none;
+      background: none;
+    }
+
+    .continue-button {
+      background-color:#23374D; 
+      color: white;
+      padding: 14px 20px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      border-radius: 5px;
+    }
+
+    .continue-button:hover {
+  background-color: #00A8CC; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+    /* Hide background text when user starts typing */
+    input:focus + .input-label {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-rectangle">
+    <div class="login-text">Login to your account</div>
+    <div class="input-container">
+      <div class="input-box">
+        <input type="text" placeholder="">
+        <div class="input-label">Username</div>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="">
+        <div class="input-label">Password</div>
+      </div>
+    </div>
+    <button class="continue-button" id="continueButton" disabled>Continue</button>
+  </div>
+</body>
+</html>

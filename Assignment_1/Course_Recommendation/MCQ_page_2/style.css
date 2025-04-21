@@ -1,0 +1,102 @@
+*
+{
+    margin: 0px;
+    border: border-box;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    background-color:#23374D;
+}
+.box
+{
+    height: 500px;
+    width: 80%;
+    background-color: #FFFFFF;
+    margin-top:10%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    /* justify-content: center; */
+    /* align-items: center;  */
+}
+.statement
+{
+    background-color: white;
+    color:black;
+    height: 42px;
+    font-family: "Radio Canada", sans-serif;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+       
+}
+
+.question
+{
+    font-family: "Inria Sans", sans-serif;
+    background-color: white;
+    color:#23374D;
+    font-size: 24px;
+    height: 26px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+}
+.options-block
+{
+    background-color: white;
+    height: 300px;
+    /* margin-left:100px; */
+    align-items: center;
+     display: flex; 
+     flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline-start: 95px;
+    margin-top: 15px;
+}
+.option
+{   font-family: "Inria Sans", sans-serif;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height:45px;
+    width: 50%;
+    color: black;
+    background-color:#808080;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.option h2{
+    margin-left: 5px;
+}
+
+.next a
+{   
+    height:40px;
+    width: 95px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #808080;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    right: 13%;
+    bottom: 7%;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gray Rectangle on Blue Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #23374D; /* Set the background color of the page to blue */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .rectangle {
+      position: relative;
+      width: 950px; /* Increased width */
+      height: 500px; /* Increased height */
+      background-color: #dddddd; /* Gray background color */
+      border: 2px solid #23374D; /* Blue border */
+      border-radius: 15px; /* Rounded corners for the gray rectangle */
+      overflow: hidden; /* Ensure contents don't overflow */
+      display: flex; /* Enable flexbox */
+      justify-content: space-between; /* Items are evenly distributed along the main axis */
+      padding: 20px; /* Add some padding for inner elements */
+    }
+
+    .white-rectangle {
+      width: 1000px; /* Adjusted width */
+      height: 400px; /* Adjusted height */
+      background-color: #ffffff; /* White background color */
+      border-radius: 15px; /* Rounded corners for the white rectangle */
+      align-self: center; /* Center the white rectangle vertically */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-container {
+      color: #000000; /* Black color */
+      font-weight: bold; /* Bold text */
+      font-size: 7cap; /* Increased font size */
+      display: flex; /* Enable flexbox */
+      flex-direction: column; /* Items are stacked vertically */
+      justify-content: center; /* Center items vertically */
+    }
+
+    .button {
+  width: 200px; /* Fixed width for the buttons */
+  height: 60px; /* Fixed height for the buttons */
+  background-color: #23374D; /* Blue background color */
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* You can adjust the font size as needed */
+}
+.button:hover {
+  background-color: #00A8CC; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectangle">
+      <div class="text-container">
+        <p>Course
+          Website
+        </p>
+              </div>
+      <div class="white-rectangle">
+        <div>
+         
+          <button class="button">Login</button>
+        </div>
+        <div>
+          
+          <button class="button">Signup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
